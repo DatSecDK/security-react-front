@@ -3,8 +3,9 @@
 Quick Start:
 1.    npx create-react-app my-app
 2.    cd my-app
-3.    code . (opens Visual Studio Code) 
-4.    npm start
+3.    npm install --save react-router-dom
+4.    code . (opens Visual Studio Code) 
+5.    npm start
 
 Commands:
 If you need React Router, run: npm install --save react-router-dom
@@ -13,6 +14,7 @@ Rfc = React function Component
 
 Bootstrap: 
 npm install react-bootstrap bootstrap
+Add: import "bootstrap/dist/css/bootstrap.min.css";
 
 How to add Font Awesome:
 Public folder -> index.html -> add:
@@ -28,8 +30,12 @@ Deploy on Github:
     -   git commit -m "first commit" 
     -   git remote add origin https://github.com/KimHotDK/NAME_OF_YOUR_REPOSITORY.git 
     -   git push -u origin master
-
-
+4. npm i gh-pages
+5. Tilføj til package.json
+    -   Under private -> "homepage": "https://kimhotdk.github.io/exam-react",
+    -   Under script -> "deploy": "npm run build&&gh-pages -d build",
+6. npm run deploy
+DEPLOYED -> https://kimhotdk.github.io/exam-react
 
 
 \{^_^}/ Have fun!
