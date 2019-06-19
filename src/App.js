@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Header from "./components/layout/Header";
+// import NavBar from "./components/layout/navbar";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import About from "./components/pages/About";
@@ -18,13 +19,14 @@ class App extends Component {
 		};
 	}
 
-	getUsername() {
-		return this.state.currentUser.username;
-	}
-
+	//Functions for login - "./components/pages/Login"
 	setUser = user => {
 		this.setState({ currentUser: user });
 	};
+
+	getUsername() {
+		return this.state.currentUser.username;
+	}
 
 	setLoggedIn = () => {
 		this.setState({ isLoggedIn: true });
@@ -38,6 +40,13 @@ class App extends Component {
 		return (
 			<Router>
 				<Header />
+				{/* <NavBar
+					setUser={this.setUser}
+					setLoggedIn={this.setLoggedIn}
+					setLoggedOut={this.setLoggedOut}
+					isLoggedIn={this.state.isLoggedIn}
+					currentUser={this.state.currentUser}
+				/> */}
 				<div className="container">
 					<Switch>
 						<Route
@@ -53,6 +62,7 @@ class App extends Component {
 							setLoggedOut={this.setLoggedOut}
 							isLoggedIn={this.state.isLoggedIn}
 							currentUser={this.state.currentUser}
+							{...this.props}
 							component={Login}
 						/>
 						<Route exact path="/test" render={props => <Test {...props} />} />

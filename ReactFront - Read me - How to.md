@@ -34,25 +34,10 @@ Deploy on Github:
 5. Tilføj til package.json
     -   Under private -> "homepage": "https://kimhotdk.github.io/exam-react",
     -   Under script -> "deploy": "npm run build&&gh-pages -d build",
-6. npm run deploy
+6. npm run deploy // Also for updates
 DEPLOYED -> https://kimhotdk.github.io/exam-react
 
 
 \{^_^}/ Have fun!
 
 Kim P. Pedersen - testprogram.dk © 2019 
-
-
-More commands:
-npm start
-Starts the development server.
-
-npm run build
-Bundles the app into static files for production.
-
-npm test
-Starts the test runner.
-
-npm run eject
-Removes this tool and copies build dependencies, configuration files
-and scripts into the app directory. If you do this, you can’t go back!

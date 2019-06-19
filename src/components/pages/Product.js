@@ -16,6 +16,7 @@ export default class Product extends Component {
 		}
 	};
 
+	//Print a list of something
 	listBooks = this.props.bookStore._books.map(b => (
 		<li key={b.id}>
 			{b.title} <span> </span>
@@ -35,7 +36,7 @@ export default class Product extends Component {
 				className="fas fa-times"
 				style={{ cursor: "pointer", float: "right", color: "red" }}
 				onClick={() => this.props.bookStore.deleteBook(b.id)}
-		/>
+			/>
 			<Link to={`/edit/${b.id}`}>
 				<i
 					className="fas fa-pencil-alt"
@@ -61,7 +62,7 @@ export default class Product extends Component {
 	count = this.props.bookStore._books.length;
 
 	render() {
-		const {bookStore} = this.props;
+		const { bookStore } = this.props;
 		return (
 			<div>
 				<h1>Hello from Product</h1>

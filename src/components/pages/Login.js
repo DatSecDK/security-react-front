@@ -1,9 +1,9 @@
-import React from "react";
+import React, {Component} from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "./../layout/login.css";
 import userFacade from "../facade/loginFacade";
 
-class Login extends React.Component {
+class Login extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { username: "", password: "" };
@@ -35,11 +35,12 @@ class Login extends React.Component {
 		const data = await userFacade.login(user);
 		if (data.token) {
 			localStorage.setItem("currentUser", JSON.stringify(data));
-			// console.log(this.props.setUser())
+			console.log(this.props);
+			console.log(data);
 			// console.log("--------------------")
 			// console.log(this.props.getUserName())
-			this.props.setUser(data);
-			this.props.setLoggedIn();
+			// this.props.setUser(data);
+			// this.props.setLoggedIn();
 		}
 	};
 
