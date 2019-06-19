@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import { Button, FormGroup, FormControl, FormLabel } from "react-bootstrap";
 import "./../layout/login.css";
 import userFacade from "../facade/loginFacade";
@@ -11,6 +11,8 @@ class Login extends Component {
 		this.handleChangeUN = this.handleChangeUN.bind(this);
 		this.handleChangePW = this.handleChangePW.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		console.log("test", props);
+		//const { setUser } = props;
 	}
 
 	validateForm() {
@@ -39,8 +41,8 @@ class Login extends Component {
 			console.log(data);
 			// console.log("--------------------")
 			// console.log(this.props.getUserName())
-			// this.props.setUser(data);
-			// this.props.setLoggedIn();
+			this.props.setUser(data);
+			this.props.setLoggedIn();
 		}
 	};
 

@@ -57,13 +57,16 @@ class App extends Component {
 						<Route
 							exact
 							path="/login"
-							setUser={this.setUser}
-							setLoggedIn={this.setLoggedIn}
-							setLoggedOut={this.setLoggedOut}
-							isLoggedIn={this.state.isLoggedIn}
-							currentUser={this.state.currentUser}
-							{...this.props}
-							component={Login}
+							render={() => (
+								<Login
+									setUser={this.setUser}
+									setLoggedIn={this.setLoggedIn}
+									setLoggedOut={this.setLoggedOut}
+									isLoggedIn={this.state.isLoggedIn}
+									currentUser={this.state.currentUser}
+									{...this.props}
+								/>
+							)}
 						/>
 						<Route exact path="/test" render={props => <Test {...props} />} />
 						<Route exact path="/about" component={About} />
