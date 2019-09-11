@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/security-react-front/static/css/main.5758a22f.chunk.css",
+    "main.js": "/security-react-front/static/js/main.6ff9ba89.chunk.js",
+    "main.js.map": "/security-react-front/static/js/main.6ff9ba89.chunk.js.map",
+    "runtime~main.js": "/security-react-front/static/js/runtime~main.046cba76.js",
+    "runtime~main.js.map": "/security-react-front/static/js/runtime~main.046cba76.js.map",
+    "static/css/2.43d354e1.chunk.css": "/security-react-front/static/css/2.43d354e1.chunk.css",
+    "static/js/2.fc85315a.chunk.js": "/security-react-front/static/js/2.fc85315a.chunk.js",
+    "static/js/2.fc85315a.chunk.js.map": "/security-react-front/static/js/2.fc85315a.chunk.js.map",
+    "index.html": "/security-react-front/index.html",
+    "precache-manifest.37efb321d4da8ce79512483dded21922.js": "/security-react-front/precache-manifest.37efb321d4da8ce79512483dded21922.js",
+    "service-worker.js": "/security-react-front/service-worker.js",
+    "static/css/2.43d354e1.chunk.css.map": "/security-react-front/static/css/2.43d354e1.chunk.css.map",
+    "static/css/main.5758a22f.chunk.css.map": "/security-react-front/static/css/main.5758a22f.chunk.css.map"
+  }
+}
