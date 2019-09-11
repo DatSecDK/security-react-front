@@ -7,7 +7,7 @@ const Header = props => {
 	return (
 		<nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-3 py-0">
 			<div className="container">
-				<a href="https://kimhotdk.github.io/exam-react/#/" className="navbar-brand">
+				<a href="https://DatSecDK.github.io/security-react-front/#/" className="navbar-brand">
 					{branding}
 				</a>
 				<div>
@@ -40,7 +40,7 @@ const Header = props => {
 };
 
 Header.defaultProps = {
-	branding: "3. Semester Exam"
+	branding: "DatSecDK - 4. semester self-study"
 };
 //Validates Header.defaultProps input
 Header.propTypes = {
